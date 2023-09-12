@@ -1,2 +1,4 @@
-# colmap_colab
-Supplementary files to run COLMAP on Google Colab
+# Colmap Machine
+Find the colab notebook here
+
+Modified the codebase to run COLMAP on a video and create transforms for it
