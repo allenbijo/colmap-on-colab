@@ -1,0 +1,13 @@
+#run on env neuralangelo
+
+SEQUENCE_NAME=test
+VIDEO_PATH=/home/user/NeRF/data/honeycomb_3d/PXL_20231101_162218946.mp4
+DOWNSAMPLE_RATE=1
+SCENE_TYPE=object
+bash scripts/preprocess_video.sh ${SEQUENCE_NAME} ${VIDEO_PATH} ${DOWNSAMPLE_RATE} ${SCENE_TYPE}
+
+
+SEQUENCE_NAME=test 
+DATA_PATH=/home/user/NeRF/data/H168_D400_A19_F27 # folder that has a folder called images
+SCENE_TYPE=object
+bash scripts/preprocess_images.sh ${SEQUENCE_NAME} ${DATA_PATH} ${SCENE_TYPE}
